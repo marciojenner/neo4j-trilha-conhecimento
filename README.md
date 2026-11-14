@@ -1,6 +1,10 @@
 # neo4j-trilha-conhecimento
 Motor de grafos voltado a ecossistemas educacionais construído em Neo4j, explorando modelagem avançada de relacionamentos, caminhos de pré-requisitos e GraphRAG readiness.
 
+### 📂 Arquivos do Repositório
+* 📥 [01_Constraints e Índices](scripts/01_constraints.cypher) — Garante a unicidade dos nós e otimiza a performance.
+* 📊 [02_Carga de Dados do Grafo](scripts/02_load_data.cypher) — Popula o banco com entidades, relacionamentos e propriedades temporais.
+* 🔍 [03_Consultas de Negócio (Cypher)](scripts/03_business_queries.cypher) — Executa análises de caminhos, métricas de progresso e recomendações.
 
 ```cypher
 // Exemplo de código Cypher
