@@ -1,6 +1,9 @@
 # neo4j-trilha-conhecimento
 Motor de grafos voltado a ecossistemas educacionais construído em Neo4j, explorando modelagem avançada de relacionamentos, caminhos de pré-requisitos e GraphRAG readiness.
 
+
+```cypher
+// Exemplo de código Cypher
 graph TD
     %% Estilo dos Nós
     classDef student fill:#4A90E2,stroke:#fff,stroke-width:2px,color:#fff;
