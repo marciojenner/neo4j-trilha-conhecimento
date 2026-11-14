@@ -1,7 +1,6 @@
-
 // =====================================================================
 // PROJETO: Knowledge Graph & Learning Path Engine (Neo4j)
-// SCRIPT 01: Criação de Constraints e Índices de Unicidade
+// SCRIPT 01: Criação de Constraints e Índices de Unicidade (Expandido)
 // =====================================================================
 
 // 1. Constraint para Estudantes
@@ -22,4 +21,16 @@ FOR (l:Lesson) REQUIRE l.id IS UNIQUE;
 
 // 5. Constraint para Habilidades (Skills)
 CREATE CONSTRAINT skill_id_unique IF NOT EXISTS
-For (sk:Skill) REQUIRE sk.id IS UNIQUE;
+FOR (sk:Skill) REQUIRE sk.id IS UNIQUE;
+
+// 6. Constraint para Instrutores (Novo)
+CREATE CONSTRAINT instructor_id_unique IF NOT EXISTS
+FOR (ins:Instructor) REQUIRE ins.id IS UNIQUE;
+
+// 7. Constraint para Projetos (Novo)
+CREATE CONSTRAINT project_id_unique IF NOT EXISTS
+FOR (p:Project) REQUIRE p.id IS UNIQUE;
+
+// 8. Constraint para Certificados (Novo)
+CREATE CONSTRAINT certificate_id_unique IF NOT EXISTS
+FOR (cert:Certificate) REQUIRE cert.id IS UNIQUE;
